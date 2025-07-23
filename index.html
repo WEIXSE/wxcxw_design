@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEIXCE DESIGN - Студия дизайна</title>
+<title>WEIXCE DESIGN - Студия дизайна сайтов и приложений</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,6 +277,14 @@ body {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+.price-item {
+  border-left: 3px solid #7C3AED;
+  transition: all 0.3s ease;
+}
+.price-item:hover {
+  border-left-width: 6px;
+  background-color: rgba(124, 58, 237, 0.05);
+}
 </style>
 </head>
 <body class="bg-white">
@@ -302,11 +310,11 @@ body {
 <section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
   <div class="parallax max-w-7xl mx-auto px-6 text-center text-white">
     <h1 class="text-5xl md:text-7xl font-black mb-6 animate-fade-in">
-      Создаем дизайн<br>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">будущего</span>
+      Дизайн сайтов<br>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">и приложений</span>
     </h1>
     <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in max-w-3xl mx-auto">
-      Современная студия дизайна с официальными договорами, рассрочкой и гарантией качества
+      Профессиональный дизайн с официальными договорами, рассрочкой и гарантией качества
     </p>
     <button class="cta-button text-white px-8 py-4 text-lg font-semibold !rounded-button whitespace-nowrap animate-fade-in">
       Начать проект
@@ -350,75 +358,85 @@ body {
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-black mb-6 animate-fade-in">Наши услуги</h2>
       <p class="text-xl text-gray-600 animate-fade-in max-w-2xl mx-auto">
-        Полный спектр дизайнерских услуг для вашего бизнеса
+        Профессиональный дизайн сайтов и мобильных приложений
       </p>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=modern%20web%20design%20interface%20on%20computer%20screen%2C%20clean%20minimalist%20website%20layout%2C%20purple%20and%20indigo%20color%20scheme%2C%20professional%20web%20development%20workspace%2C%20ui%20ux%20design%20elements%2C%20contemporary%20digital%20design&width=400&height=300&seq=service001&orientation=landscape"
-            alt="Веб-дизайн" class="w-full h-full object-cover object-top transition-transform duration-500">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-primary">Дизайн сайтов</h3>
+        <div class="space-y-6">
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Анализ аудитории и ТЗ</h4>
+            <p class="text-gray-600 mb-2">Исследование целевой аудитории и создание технического задания</p>
+            <p class="font-bold text-primary">от 3 000 ₽</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Прототипирование</h4>
+            <p class="text-gray-600 mb-2">Создание интерактивных прототипов будущего сайта</p>
+            <p class="font-bold text-primary">от 7 000 ₽</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Готовый дизайн</h4>
+            <p class="text-gray-600 mb-2">Разработка полного дизайна сайта по утвержденному прототипу</p>
+            <p class="font-bold text-primary">от 15 000 ₽ за 3 страницы</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Адаптация и правки</h4>
+            <p class="text-gray-600 mb-2">Доработка дизайна и адаптация под разные устройства</p>
+            <p class="font-bold text-primary">от 5 000 ₽</p>
+          </div>
         </div>
-        <h3 class="text-xl font-bold mb-4">Веб-дизайн</h3>
-        <p class="text-gray-600 mb-6">Создание современных и функциональных веб-сайтов</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
       </div>
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=mobile%20app%20design%20mockup%20on%20smartphone%2C%20modern%20mobile%20interface%2C%20clean%20app%20ui%20design%2C%20purple%20gradient%20colors%2C%20professional%20mobile%20application%20design%2C%20contemporary%20app%20development&width=400&height=300&seq=service002&orientation=landscape"
-            alt="Мобильные приложения" class="w-full h-full object-cover object-top transition-transform duration-500">
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-secondary">Дизайн мобильных приложений</h3>
+        <div class="space-y-6">
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Исследование рынка</h4>
+            <p class="text-gray-600 mb-2">Анализ конкурентов и целевой аудитории приложения</p>
+            <p class="font-bold text-secondary">от 3 000 ₽</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Прототип</h4>
+            <p class="text-gray-600 mb-2">Создание интерактивного прототипа приложения</p>
+            <p class="font-bold text-secondary">от 7 000 ₽</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Готовые экраны</h4>
+            <p class="text-gray-600 mb-2">Разработка полного дизайна экранов приложения</p>
+            <p class="font-bold text-secondary">от 25 000 ₽ за 5 экранов</p>
+          </div>
+          <div class="price-item pl-4 py-3">
+            <h4 class="font-bold mb-1">Тестирование и доработки</h4>
+            <p class="text-gray-600 mb-2">Проверка удобства интерфейса и внесение правок</p>
+            <p class="font-bold text-secondary">от 5 000 ₽</p>
+          </div>
         </div>
-        <h3 class="text-xl font-bold mb-4">Мобильные приложения</h3>
-        <p class="text-gray-600 mb-6">Дизайн интуитивных мобильных приложений</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
       </div>
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=brand%20identity%20design%20elements%2C%20logo%20design%20process%2C%20corporate%20branding%20materials%2C%20business%20cards%20and%20letterheads%2C%20modern%20brand%20design%2C%20purple%20and%20indigo%20color%20palette%2C%20professional%20branding&width=400&height=300&seq=service003&orientation=landscape"
-            alt="Брендинг" class="w-full h-full object-cover object-top transition-transform duration-500">
+    </div>
+    <div class="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+      <h3 class="text-2xl font-bold mb-6 text-center">Анализ юзабилити</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="ri-search-eye-line ri-lg text-primary"></i>
+          </div>
+          <h4 class="font-bold mb-2">Проверка удобства интерфейса</h4>
+          <p class="text-gray-600">Тестирование на реальных пользователях</p>
         </div>
-        <h3 class="text-xl font-bold mb-4">Брендинг</h3>
-        <p class="text-gray-600 mb-6">Разработка фирменного стиля и айдентики</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
-      </div>
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=graphic%20design%20workspace%20with%20creative%20materials%2C%20design%20tools%20and%20sketches%2C%20modern%20graphic%20design%20elements%2C%20colorful%20design%20projects%2C%20professional%20creative%20studio%20setup&width=400&height=300&seq=service004&orientation=landscape"
-            alt="Графический дизайн" class="w-full h-full object-cover object-top transition-transform duration-500">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="ri-lightbulb-flash-line ri-lg text-secondary"></i>
+          </div>
+          <h4 class="font-bold mb-2">Рекомендации по улучшению</h4>
+          <p class="text-gray-600">Детальный отчет с предложениями</p>
         </div>
-        <h3 class="text-xl font-bold mb-4">Графический дизайн</h3>
-        <p class="text-gray-600 mb-6">Создание визуальных решений для печати и диджитал</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
-      </div>
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=ui%20ux%20design%20process%2C%20user%20interface%20wireframes%20and%20prototypes%2C%20modern%20digital%20design%20workflow%2C%20user%20experience%20design%20elements%2C%20professional%20ux%20design%20studio&width=400&height=300&seq=service005&orientation=landscape"
-            alt="UX/UI дизайн" class="w-full h-full object-cover object-top transition-transform duration-500">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="ri-tools-line ri-lg text-green-600"></i>
+          </div>
+          <h4 class="font-bold mb-2">Внедрение правок</h4>
+          <p class="text-gray-600">Реализация улучшений интерфейса</p>
         </div>
-        <h3 class="text-xl font-bold mb-4">UX/UI дизайн</h3>
-        <p class="text-gray-600 mb-6">Проектирование пользовательского опыта</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
-      </div>
-      <div class="service-card p-8 rounded-2xl animate-fade-in">
-        <div class="w-full h-48 rounded-xl mb-6 overflow-hidden">
-          <img src="https://readdy.ai/api/search-image?query=marketing%20design%20materials%2C%20advertising%20banners%20and%20promotional%20graphics%2C%20social%20media%20design%20templates%2C%20modern%20marketing%20visuals%2C%20creative%20advertising%20design&width=400&height=300&seq=service006&orientation=landscape"
-            alt="Маркетинговый дизайн" class="w-full h-full object-cover object-top transition-transform duration-500">
-        </div>
-        <h3 class="text-xl font-bold mb-4">Маркетинговый дизайн</h3>
-        <p class="text-gray-600 mb-6">Дизайн для рекламы и продвижения</p>
-        <button class="text-primary font-semibold hover:text-secondary transition-colors">
-          Подробнее <i class="ri-arrow-right-line ml-1"></i>
-        </button>
       </div>
     </div>
   </div>
@@ -432,19 +450,19 @@ body {
           Все работы
         </button>
         <button class="px-6 py-2 bg-white text-gray-700 !rounded-button font-medium whitespace-nowrap filter-btn hover:bg-gray-100" data-filter="web">
-          Веб-дизайн
+          Сайты
         </button>
         <button class="px-6 py-2 bg-white text-gray-700 !rounded-button font-medium whitespace-nowrap filter-btn hover:bg-gray-100" data-filter="mobile">
-          Мобильные
+          Приложения
         </button>
-        <button class="px-6 py-2 bg-white text-gray-700 !rounded-button font-medium whitespace-nowrap filter-btn hover:bg-gray-100" data-filter="brand">
-          Брендинг
-        </button>
+        <a href="portfolio.html" class="px-6 py-2 bg-white text-gray-700 !rounded-button font-medium whitespace-nowrap hover:bg-gray-100 transition-colors">
+          Все проекты <i class="ri-arrow-right-line ml-1"></i>
+        </a>
       </div>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
       <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="web">
-        <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20design%2C%20clean%20online%20store%20interface%2C%20professional%20web%20design%20layout%2C%20purple%20color%20scheme%2C%20contemporary%20digital%20commerce%20platform&width=400&height=300&seq=portfolio001&orientation=landscape"
+        <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20design%2C%20clean%20online%20store%20interface%2C%20professional%20web%20design%20layout%2C%20purple%20and%20indigo%20color%20scheme%2C%20contemporary%20digital%20commerce%20platform&width=400&height=300&seq=portfolio001&orientation=landscape"
           alt="Интернет-магазин TechStore" class="w-full h-64 object-cover object-top">
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Интернет-магазин TechStore</h3>
@@ -457,14 +475,6 @@ body {
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Приложение FitTracker</h3>
           <p class="text-gray-600">Дизайн фитнес-приложения для iOS и Android</p>
-        </div>
-      </div>
-      <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="brand">
-        <img src="https://readdy.ai/api/search-image?query=restaurant%20brand%20identity%20design%2C%20logo%20and%20branding%20materials%20for%20dining%20establishment%2C%20elegant%20restaurant%20branding%2C%20sophisticated%20food%20service%20brand%20design&width=400&height=300&seq=portfolio003&orientation=landscape"
-          alt="Брендинг ресторана Delicious" class="w-full h-64 object-cover object-top">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Ресторан Delicious</h3>
-          <p class="text-gray-600">Полный ребрендинг сети ресторанов</p>
         </div>
       </div>
       <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="web">
@@ -483,12 +493,20 @@ body {
           <p class="text-gray-600">Мобильный банкинг нового поколения</p>
         </div>
       </div>
-      <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="brand">
-        <img src="https://readdy.ai/api/search-image?query=fashion%20brand%20identity%20design%2C%20clothing%20brand%20logo%20and%20branding%2C%20stylish%20fashion%20brand%20materials%2C%20modern%20apparel%20brand%20design%2C%20elegant%20fashion%20branding&width=400&height=300&seq=portfolio006&orientation=landscape"
-          alt="Бренд одежды StyleCo" class="w-full h-64 object-cover object-top">
+      <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="web">
+        <img src="https://readdy.ai/api/search-image?query=restaurant%20website%20design%2C%20modern%20food%20service%20website%2C%20responsive%20restaurant%20site%2C%20elegant%20dining%20website%20interface&width=400&height=300&seq=portfolio007&orientation=landscape"
+          alt="Сайт ресторана Delicious" class="w-full h-64 object-cover object-top">
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Бренд StyleCo</h3>
-          <p class="text-gray-600">Айдентика для модного бренда одежды</p>
+          <h3 class="text-xl font-bold mb-2">Сайт ресторана Delicious</h3>
+          <p class="text-gray-600">Современный дизайн для сети ресторанов</p>
+        </div>
+      </div>
+      <div class="portfolio-item bg-white rounded-2xl overflow-hidden animate-fade-in" data-category="mobile">
+        <img src="https://readdy.ai/api/search-image?query=food%20delivery%20mobile%20app%20design%2C%20modern%20restaurant%20app%20interface%2C%20clean%20food%20ordering%20app%2C%20professional%20delivery%20application%20ui&width=400&height=300&seq=portfolio008&orientation=landscape"
+          alt="Приложение FoodExpress" class="w-full h-64 object-cover object-top">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Приложение FoodExpress</h3>
+          <p class="text-gray-600">Сервис доставки еды с удобным интерфейсом</p>
         </div>
       </div>
     </div>
@@ -588,324 +606,81 @@ body {
         </div>
         <div>
           <label class="block text-sm font-semibold text-gray-700 mb-2">Описание проекта</label>
-          <textarea name="message" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Расскажите подробнее о вашем проекте..."></textarea>
-        </div>
-        <div class="flex items-center">
-          <input type="checkbox" id="agreement" required class="sr-only agreement-checkbox">
-          <div class="w-5 h-5 border-2 border-gray-300 rounded mr-3 flex items-center justify-center checkbox-custom">
-            <i class="ri-check-line text-white text-sm hidden checkbox-icon"></i>
-          </div>
-          <label for="agreement" class="text-sm text-gray-600">
-            Согласен с обработкой персональных данных и условиями договора
-          </label>
-        </div>
-        <button type="submit" class="cta-button w-full text-white py-4 text-lg font-semibold !rounded-button whitespace-nowrap">
-          Отправить заявку
-        </button>
-      </form>
-      <div id="form-success" class="hidden text-center py-8">
-        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i class="ri-checkbox-circle-fill text-green-600 text-3xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Заявка отправлена!</h3>
-        <p class="text-gray-600">Мы свяжемся с вами в течение часа</p>
-      </div>
-    </div>
-  </div>
-</section>
-<footer class="bg-gray-900 text-white py-12">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
-      <div>
-        <div class="font-montserrat text-2xl text-primary mb-4">WEIXCE DESIGN</div>
-        <p class="text-gray-400">Студия современного дизайна с официальными гарантиями</p>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Услуги</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="#" class="hover:text-white transition-colors">Веб-дизайн</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Мобильные приложения</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Брендинг</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">UX/UI дизайн</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Контакты</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li class="flex items-center">
-            <div class="w-5 h-5 flex items-center justify-center mr-2">
-              <i class="ri-phone-line"></i>
-            </div>
-            +7 (495) 123-45-67
-          </li>
-          <li class="flex items-center">
-            <div class="w-5 h-5 flex items-center justify-center mr-2">
-              <i class="ri-mail-line"></i>
-            </div>
-            hello@weixce.design
-          </li>
-          <li class="flex items-center">
-            <div class="w-5 h-5 flex items-center justify-center mr-2">
-              <i class="ri-map-pin-line"></i>
-            </div>
-            Москва, ул. Дизайнерская, 1
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Социальные сети</h4>
-        <div class="flex space-x-4">
-          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-            <i class="ri-telegram-line"></i>
-          </a>
-          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-            <i class="ri-whatsapp-line"></i>
-          </a>
-          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-            <i class="ri-instagram-line"></i>
-          </a>
-          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-            <i class="ri-behance-line"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-      <p>&copy; 2025 ИП ВЭЙКСИ ДИЗАЙН. Все права защищены.</p>
-    </div>
-  </div>
-</footer>
-<script id="loader-script">
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    document.getElementById('loader').classList.add('hidden');
-  }, 1500);
-});
-</script>
-<script id="scroll-animations">
-document.addEventListener('DOMContentLoaded', function() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, observerOptions);
-  document.querySelectorAll('.animate-fade-in').forEach(el => {
-    observer.observe(el);
-  });
-  window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.parallax');
-    parallaxElements.forEach(element => {
-      const speed = 0.5;
-      element.style.setProperty('--parallax-offset', `${scrolled * speed}px`);
-    });
-    const nav = document.querySelector('.nav-menu');
-    if (scrolled > 100) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
-});
-</script>
-<script id="portfolio-filter">
-document.addEventListener('DOMContentLoaded', function() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const filter = this.getAttribute('data-filter');
-      filterButtons.forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-white');
-        btn.classList.add('bg-white', 'text-gray-700');
-      });
-      this.classList.remove('bg-white', 'text-gray-700');
-      this.classList.add('bg-primary', 'text-white');
-      portfolioItems.forEach(item => {
-        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  });
-});
-</script>
-<script id="testimonial-slider">
-document.addEventListener('DOMContentLoaded', function() {
-  const track = document.getElementById('testimonial-track');
-  const dots = document.querySelectorAll('.testimonial-dot');
-  let currentSlide = 0;
-  function goToSlide(slideIndex) {
-    track.style.transform = `translateX(-${slideIndex * 100}%)`;
-    dots.forEach(dot => {
-      dot.classList.remove('bg-primary', 'active');
-      dot.classList.add('bg-gray-300');
-    });
-    dots[slideIndex].classList.remove('bg-gray-300');
-    dots[slideIndex].classList.add('bg-primary', 'active');
-    currentSlide = slideIndex;
-  }
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => goToSlide(index));
-  });
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % dots.length;
-    goToSlide(currentSlide);
-  }, 5000);
-});
-</script>
-<script id="form-controls">
-document.addEventListener('DOMContentLoaded', function() {
-  const radioInputs = document.querySelectorAll('.client-type-radio');
-  radioInputs.forEach(radio => {
-    radio.addEventListener('change', function() {
-      document.querySelectorAll('.radio-dot').forEach(dot => dot.classList.add('hidden'));
-      document.querySelectorAll('.radio-custom').forEach(custom => {
-        custom.classList.remove('border-primary');
-        custom.classList.add('border-gray-300');
-      });
-      if (this.checked) {
-        const customRadio = this.parentElement.querySelector('.radio-custom');
-        const dot = this.parentElement.querySelector('.radio-dot');
-        customRadio.classList.remove('border-gray-300');
-        customRadio.classList.add('border-primary');
-        dot.classList.remove('hidden');
-      }
-    });
-  });
-  const checkbox = document.getElementById('agreement');
-  const checkboxCustom = document.querySelector('.checkbox-custom');
-  const checkboxIcon = document.querySelector('.checkbox-icon');
-  checkbox.addEventListener('change', function() {
-    if (this.checked) {
-      checkboxCustom.classList.remove('border-gray-300');
-      checkboxCustom.classList.add('border-primary', 'bg-primary');
-      checkboxIcon.classList.remove('hidden');
-    } else {
-      checkboxCustom.classList.remove('border-primary', 'bg-primary');
-      checkboxCustom.classList.add('border-gray-300');
-      checkboxIcon.classList.add('hidden');
-    }
-  });
-  checkboxCustom.addEventListener('click', function() {
-    checkbox.checked = !checkbox.checked;
-    checkbox.dispatchEvent(new Event('change'));
-  });
-});
-</script>
-<script id="cursor-animation">
-document.addEventListener('DOMContentLoaded', function() {
-  const cursor = document.querySelector('.custom-cursor');
-  const trail = document.querySelector('.cursor-trail');
-  let trailTimeout;
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    clearTimeout(trailTimeout);
-    trail.style.opacity = '1';
-    trail.style.left = e.clientX + 'px';
-    trail.style.top = e.clientY + 'px';
-    trailTimeout = setTimeout(() => {
-      trail.style.opacity = '0';
-    }, 100);
-  });
-  const shapes = document.querySelectorAll('.shape');
-  shapes.forEach((shape, index) => {
-    const size = Math.random() * 200 + 100;
-    shape.style.width = size + 'px';
-    shape.style.height = size + 'px';
-    shape.style.left = Math.random() * 100 + 'vw';
-    shape.style.top = Math.random() * 100 + 'vh';
-    shape.style.setProperty('--moveX', (Math.random() * 200 - 100) + 'vw');
-    shape.style.setProperty('--moveY', (Math.random() * 200 - 100) + 'vh');
-    shape.style.animationDelay = index * -5 + 's';
-  });
-  document.querySelectorAll('a, button').forEach(element => {
-    element.classList.add('hover-target');
-  });
-});
-</script>
-<script id="smooth-scroll">
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-});
-</script>
-<script id="telegram-form">
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contact-form');
-  const formSuccess = document.getElementById('form-success');
-  
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    
-    // ВАЖНО: Замените эти значения на свои!
-    const botToken = '7996756427:AAEbnjRSNuh1KXoYdp2h3yrRla7rqINANuE';
-    const chatId = '7873914635';
-    
-    // Форматируем сообщение для Telegram
-    const message = `📌 Новая заявка с сайта WEIXCE DESIGN:
-    
+          <textarea name="message" rows="4"
+          class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Расскажите подробнее о вашем проекте..."></textarea>
+</div>
+<div class="flex items-center">
+<input type="checkbox" id="agreement" required class="sr-only agreement-checkbox">
+<div class="w-5 h-5 border-2 border-gray-300 rounded mr-3 flex items-center justify-center checkbox-custom">
+<i class="ri-check-line text-white text-sm hidden checkbox-icon"></i>
+</div>
+<label for="agreement" class="text-sm text-gray-600">
+Согласен с обработкой персональных данных и условиями договора
+</label>
+</div>
+<button type="submit" class="cta-button w-full text-white py-4 text-lg font-semibold !rounded-button whitespace-nowrap">
+Отправить заявку
+</button>
+</form>
+<div id="form-success" class="hidden text-center py-8">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-checkbox-circle-fill text-green-600 text-3xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Заявка отправлена!</h3>
+<p class="text-gray-600">Мы свяжемся с вами в течение часа</p>
+</div>
+</div>
+
+</div> </section> <footer class="bg-gray-900 text-white py-12"> <div class="max-w-7xl mx-auto px-6"> <div class="grid md:grid-cols-4 gap-8 mb-8"> <div> <div class="font-montserrat text-2xl text-primary mb-4">WEIXCE DESIGN</div> <p class="text-gray-400">Студия профессионального дизайна сайтов и приложений</p> </div> <div> <h4 class="font-bold mb-4">Услуги</h4> <ul class="space-y-2 text-gray-400"> <li><a href="#services" class="hover:text-white transition-colors">Дизайн сайтов</a></li> <li><a href="#services" class="hover:text-white transition-colors">Дизайн приложений</a></li> <li><a href="#services" class="hover:text-white transition-colors">Анализ юзабилити</a></li> </ul> </div> <div> <h4 class="font-bold mb-4">Контакты</h4> <ul class="space-y-2 text-gray-400"> <li class="flex items-center"> <div class="w-5 h-5 flex items-center justify-center mr-2"> <i class="ri-phone-line"></i> </div> +7 (495) 123-45-67 </li> <li class="flex items-center"> <div class="w-5 h-5 flex items-center justify-center mr-2"> <i class="ri-mail-line"></i> </div> hello@weixce.design </li> <li class="flex items-center"> <div class="w-5 h-5 flex items-center justify-center mr-2"> <i class="ri-map-pin-line"></i> </div> Москва, ул. Дизайнерская, 1 </li> </ul> </div> <div> <h4 class="font-bold mb-4">Социальные сети</h4> <div class="flex space-x-4"> <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"> <i class="ri-telegram-line"></i> </a> <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"> <i class="ri-whatsapp-line"></i> </a> <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"> <i class="ri-instagram-line"></i> </a> <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"> <i class="ri-behance-line"></i> </a> </div> </div> </div> <div class="border-t border-gray-800 pt-8 text-center text-gray-400"> <p>&copy; 2025 ИП ВЭЙКСИ ДИЗАЙН. Все права защищены.</p> </div> </div> </footer> <script id="loader-script"> document.addEventListener('DOMContentLoaded', function() { setTimeout(function() { document.getElementById('loader').classList.add('hidden'); }, 1500); }); </script> <script id="scroll-animations"> document.addEventListener('DOMContentLoaded', function() { const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }; const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, observerOptions); document.querySelectorAll('.animate-fade-in').forEach(el => { observer.observe(el); }); window.addEventListener('scroll', function() { const scrolled = window.pageYOffset; const parallaxElements = document.querySelectorAll('.parallax'); parallaxElements.forEach(element => { const speed = 0.5; element.style.setProperty('--parallax-offset', `${scrolled * speed}px`); }); const nav = document.querySelector('.nav-menu'); if (scrolled > 100) { nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); } }); }); </script> <script id="portfolio-filter"> document.addEventListener('DOMContentLoaded', function() { const filterButtons = document.querySelectorAll('.filter-btn'); const portfolioItems = document.querySelectorAll('.portfolio-item'); filterButtons.forEach(button => { button.addEventListener('click', function() { const filter = this.getAttribute('data-filter'); filterButtons.forEach(btn => { btn.classList.remove('bg-primary', 'text-white'); btn.classList.add('bg-white', 'text-gray-700'); }); this.classList.remove('bg-white', 'text-gray-700'); this.classList.add('bg-primary', 'text-white'); portfolioItems.forEach(item => { if (filter === 'all' || item.getAttribute('data-category') === filter) { item.style.display = 'block'; } else { item.style.display = 'none'; } }); }); }); }); </script> <script id="testimonial-slider"> document.addEventListener('DOMContentLoaded', function() { const track = document.getElementById('testimonial-track'); const dots = document.querySelectorAll('.testimonial-dot'); let currentSlide = 0; function goToSlide(slideIndex) { track.style.transform = `translateX(-${slideIndex * 100}%)`; dots.forEach(dot => { dot.classList.remove('bg-primary', 'active'); dot.classList.add('bg-gray-300'); }); dots[slideIndex].classList.remove('bg-gray-300'); dots[slideIndex].classList.add('bg-primary', 'active'); currentSlide = slideIndex; } dots.forEach((dot, index) => { dot.addEventListener('click', () => goToSlide(index)); }); setInterval(() => { currentSlide = (currentSlide + 1) % dots.length; goToSlide(currentSlide); }, 5000); }); </script> <script id="form-controls"> document.addEventListener('DOMContentLoaded', function() { const radioInputs = document.querySelectorAll('.client-type-radio'); radioInputs.forEach(radio => { radio.addEventListener('change', function() { document.querySelectorAll('.radio-dot').forEach(dot => dot.classList.add('hidden')); document.querySelectorAll('.radio-custom').forEach(custom => { custom.classList.remove('border-primary'); custom.classList.add('border-gray-300'); }); if (this.checked) { const customRadio = this.parentElement.querySelector('.radio-custom'); const dot = this.parentElement.querySelector('.radio-dot'); customRadio.classList.remove('border-gray-300'); customRadio.classList.add('border-primary'); dot.classList.remove('hidden'); } }); }); const checkbox = document.getElementById('agreement'); const checkboxCustom = document.querySelector('.checkbox-custom'); const checkboxIcon = document.querySelector('.checkbox-icon'); checkbox.addEventListener('change', function() { if (this.checked) { checkboxCustom.classList.remove('border-gray-300'); checkboxCustom.classList.add('border-primary', 'bg-primary'); checkboxIcon.classList.remove('hidden'); } else { checkboxCustom.classList.remove('border-primary', 'bg-primary'); checkboxCustom.classList.add('border-gray-300'); checkboxIcon.classList.add('hidden'); } }); checkboxCustom.addEventListener('click', function() { checkbox.checked = !checkbox.checked; checkbox.dispatchEvent(new Event('change')); }); }); </script> <script id="cursor-animation"> document.addEventListener('DOMContentLoaded', function() { const cursor = document.querySelector('.custom-cursor'); const trail = document.querySelector('.cursor-trail'); let trailTimeout; document.addEventListener('mousemove', (e) => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; clearTimeout(trailTimeout); trail.style.opacity = '1'; trail.style.left = e.clientX + 'px'; trail.style.top = e.clientY + 'px'; trailTimeout = setTimeout(() => { trail.style.opacity = '0'; }, 100); }); const shapes = document.querySelectorAll('.shape'); shapes.forEach((shape, index) => { const size = Math.random() * 200 + 100; shape.style.width = size + 'px'; shape.style.height = size + 'px'; shape.style.left = Math.random() * 100 + 'vw'; shape.style.top = Math.random() * 100 + 'vh'; shape.style.setProperty('--moveX', (Math.random() * 200 - 100) + 'vw'); shape.style.setProperty('--moveY', (Math.random() * 200 - 100) + 'vh'); shape.style.animationDelay = index * -5 + 's'; }); document.querySelectorAll('a, button').forEach(element => { element.classList.add('hover-target'); }); }); </script> <script id="smooth-scroll"> document.addEventListener('DOMContentLoaded', function() { document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); }); }); </script> <script id="telegram-form"> document.addEventListener('DOMContentLoaded', function() { const form = document.getElementById('contact-form'); const formSuccess = document.getElementById('form-success');
+form.addEventListener('submit', async function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+const data = Object.fromEntries(formData.entries());
+
+// ВАЖНО: Замените эти значения на свои!
+const botToken = '7996756427:AAEbnjRSNuh1KXoYdp2h3yrRla7rqINANuE';
+const chatId = '7873914635';
+
+// Форматируем сообщение для Telegram
+const message = `📌 Новая заявка с сайта WEIXCE DESIGN:
 👤 Имя: ${data.name}
 📞 Телефон: ${data.phone}
 📧 Email: ${data.email}
 🏢 Тип клиента: ${data['client-type'] === 'individual' ? 'Самозанятый' : 'Юридическое лицо'}
 📝 Сообщение: ${data.message || 'Не указано'}`;
-    
-    try {
-      // Отправляем данные в Telegram
-      await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
-          parse_mode: 'HTML'
-        })
-      });
-      
-      // Показываем сообщение об успехе
-      form.style.display = 'none';
-      formSuccess.style.display = 'block';
-      
-      // Сбрасываем форму
-      form.reset();
-      
-      // Через 5 секунд возвращаем форму
-      setTimeout(() => {
-        form.style.display = 'block';
-        formSuccess.style.display = 'none';
-      }, 5000);
-      
-    } catch (error) {
-      alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.');
-      console.error('Error:', error);
-    }
+try {
+  // Отправляем данные в Telegram
+  await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: message,
+      parse_mode: 'HTML'
+    })
   });
+  
+  // Показываем сообщение об успехе
+  form.style.display = 'none';
+  formSuccess.style.display = 'block';
+  
+  // Сбрасываем форму
+  form.reset();
+  
+  // Через 5 секунд возвращаем форму
+  setTimeout(() => {
+    form.style.display = 'block';
+    formSuccess.style.display = 'none';
+  }, 5000);
+  
+} catch (error) {
+  alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.');
+  console.error('Error:', error);
+}
+});
 });
 </script>
-</body>
-</html>
+
+</body> </html>
